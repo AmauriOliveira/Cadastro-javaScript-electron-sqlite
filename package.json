@@ -1,0 +1,26 @@
+{
+  "name": "Prototipo",
+  "version": "1.0.0",
+  "description": "Meu primeiro projeto com ElectronJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "rebuild": "electron-rebuild -f -w sqlite3",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ElectronJS",
+    "Knex",
+    "Sqlite3"
+  ],
+  "author": "Amauri Oliveira",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^9.0.0",
+    "knex": "^0.21.1",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.11.0"
+  }
+}

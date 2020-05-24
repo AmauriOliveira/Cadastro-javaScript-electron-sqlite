@@ -27,15 +27,15 @@
 
 ## 🧐 Sobre <a name = "about"></a>
 
-Este pequeno Prototipo que fiz em **ElectronJS** os CRUDS basicos são um Database **Sqlite** com uso  do **Knex**
+Este pequeno Prototipo que fiz em **ElectronJS** os CRUDS basicos são  em um Database **Sqlite** com uso  do **Knex**
 
 ## 🏁 Iniciando <a name = "getting_started"></a>
 
 ### Clone o repositorio
-`git clone https://github.com/AmauriOliveira/javaScript-electron-sqlite.git`
+`git clone https://github.com/AmauriOliveira/Cadastro-javaScript-electron-sqlite.git`
 
 ### Entre no repositorio
-`cd javaScript-electron-sqlite`
+`cd Cadastro-javaScript-electron-sqlite`
 
 ### Install dependencies
 `npm install`
@@ -60,4 +60,4 @@ Este pequeno Prototipo que fiz em **ElectronJS** os CRUDS basicos são um Databa
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [Amauri Oliveira](https://github.com/amaurioliveira) - Idea & Initial work
+- [Amauri Oliveira](https://github.com/amaurioliveira) - Ideia & Inicio do projeto.

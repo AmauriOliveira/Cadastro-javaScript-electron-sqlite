@@ -21,9 +21,8 @@ ipcMain.on('selectAll', async (event, args) => {
 });
 
 const getUsers = async () => {
-
     const results = await connection('users')
-        .limit(5)
+        .limit(25)
         .select(['users.*']);
     return results;
 };
@@ -51,7 +50,6 @@ ipcMain.on('create', async (event, args) => {
 const createUser = async (user) => {
     const { id, name, email, whatsapp, city, uf } = user;
     await connection('users').insert({
-        id,
         name,
         email,
         whatsapp,
@@ -72,6 +70,22 @@ const find = async (id) => {
         .limit(1)//limite de registro a vir pro ver
         .select(['users.*']);
     return results;
+};
+
+ipcMain.on('findName', async (event, name) => {
+    const user = await findByName(name);
+    event.reply('findName', user);
+});
+const findByName = async (name) => {
+    try {
+        const results = await connection('users')
+            .where('name', name)
+            .limit(25)//limite de registro a vir pro ver
+            .select(['users.*']);
+        return results;
+    } catch (error) {
+        console.log(error);
+    }
 };
 
 ipcMain.on('update', async (event, args) => {

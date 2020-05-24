@@ -9,6 +9,8 @@ const userCity = document.querySelector("#city");
 const userUf = document.querySelector("#uf");
 const usersList = document.querySelector("#users");
 const submitButton = document.querySelector("#submit");
+//const nomeFind = document.querySelector("#nomeFind");
+//const btnFindUser = document.querySelector("#btnFind");
 
 let users = [];
 let editingStatus = false;
@@ -40,8 +42,18 @@ const editUser = async (id) => {
     editingStatus = true;
 };
 
-submitButton.onclick = addUser;
 
+//btnFindUser.onclick = findByUser;
+async function findByUser() {
+    ipcRenderer.send('findName', nomeFind.value);
+    ipcRenderer.on('findName', (event, response) => {
+        console.log(response);
+
+        renderUsers(response);
+    });
+};
+
+submitButton.onclick = addUser;
 async function addUser() {
     try {
         const user = {

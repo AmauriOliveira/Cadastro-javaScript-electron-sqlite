@@ -10,20 +10,24 @@
     </head>
 
     <body>
-        <a href="./list.html">GO</a>
-        <main class="container-fluid">
-
+        <div class="container-fluid">
             <div class="row">
-
-                <div class="col-md-6 p-4 my-auto">
+                <div class="col-sm-12 my-auto bg-success">
+                    <h1>Cadastro</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4 my-auto">
 
                     <!-- Form -->
-                    <form id="userForm" class="card card-body">
+                    <form id="userForm" class="card card-body main-container  shadow-lg">
                         <div class="form-group">
-                            <input type="text" id="id" placeholder="Id" class="form-control">
+                            <input type="number" id="id" placeholder="0" class="form-control" disabled>
                         </div>
                         <div class="form-group">
-                            <input type="text" id="name" placeholder="Name" class="form-control" autofocus>
+                            <input type="text" id="name" placeholder="Name" class="form-control">
                         </div>
                         <div class="form-group">
                             <input type="text" id="email" placeholder="Email" class="form-control">
@@ -37,18 +41,23 @@
                         <div class="form-group">
                             <input type="text" id="uf" placeholder="UF" class="form-control">
                         </div>
-                        <button type="submit" id="submit" class="btn btn-primary">
+                        <button id="submit" class="btn btn-primary">
                             Salvar
                         </button>
                     </form>
-
                 </div>
-
                 <!--List -->
-                <div class="col-md-6">
-
+                <div class="col-md-8 my-auto main-container align-top">
+                   <!--<form class="card card-body shadow-lg">
+                        <div class="form-group">
+                            <input type="text" id="nomeFind" placeholder="Pesquisar" class="form-control">
+                        </div>
+                        <button id="btnFind" class="btn btn btn-info">
+                            Pesquisar
+                        </button>
+                    </form>-->
                     <div>
-                        <table class="table table-bordered table-hover">
+                        <table class="table table-bordered table-hover shadow-lg">
                             <thead>
                                 <tr>
                                     <th>Name</th>
@@ -66,9 +75,9 @@
                         </table>
                     </div>
                 </div>
-            </div>
 
-        </main>
+            </div>
+        </div>
         <script type="text/javascript" src="./controllers/userController.js"></script>
     </body>
 

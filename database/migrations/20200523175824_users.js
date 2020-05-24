@@ -1,7 +1,7 @@
 
 exports.up = function(knex) {
     return knex.schema.createTable('users', function (table) {
-        table.string('id').primary();//primary key
+        table.increments('id').primary();//primary key
         table.string('name').notNullable();//não nulo
         table.string('email').notNullable();
         table.string('whatsapp').notNullable();
@@ -16,3 +16,4 @@ exports.down = function(knex) {
 // npx knex init
 // npx knex migrate:make users
 // npx knex migrate:latest
+// npx knex migrate:rollback

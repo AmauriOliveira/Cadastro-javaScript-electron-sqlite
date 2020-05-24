@@ -44,6 +44,7 @@ Este pequeno Prototipo que fiz em **ElectronJS** os CRUDS basicos são um Databa
 `npx knex init`
 `npx knex migrate:make users`
 `npx knex migrate:latest`
+`npx knex migrate:rollback`
 
 ### Execultar o app
 `npm start`

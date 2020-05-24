@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
+ <img width=682px height=360px src="https://i.imgur.com/Rfne2HV.png" alt="Project logo"></a>
 </p>
 
 <h3 align="center">Prototipo</h3>
@@ -24,6 +24,7 @@
 - [Iniciando](#getting_started)
 - [Feito com](#built_using)
 - [Autor](#authors)
+- [Print](#prints)
 
 ## 🧐 Sobre <a name = "about"></a>
 
@@ -62,3 +63,7 @@ Este pequeno Prototipo que fiz em **ElectronJS** os CRUDS basicos são um Databa
 ## ✍️ Authors <a name = "authors"></a>
 
 - [Amauri Oliveira](https://github.com/amaurioliveira) - Idea & Initial work
+
+## 📷 Print <a name = "prints"></a>
+
+ <img src="https://i.imgur.com/Dlzdd36.png" alt="Tela"></a>

@@ -8,8 +8,6 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
@@ -20,106 +18,46 @@
     <br> 
 </p>
 
-## 📝 Table of Contents
+## 📝 Menu
 
 - [Sobre](#about)
-- [Getting Started](#getting_started)
-- [Deployment](#deployment)
-- [Usage](#usage)
-- [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
+- [Iniciando](#getting_started)
+- [Feito com](#built_using)
+- [Autor](#authors)
 
 ## 🧐 Sobre <a name = "about"></a>
 
-Este pequeno Prototipo deve fazer os CRUDS basicos em um Database Sqlite
+Este pequeno Prototipo que fiz em **ElectronJS** os CRUDS basicos são um Database **Sqlite** com uso  do **Knex**
 
-## 🏁 Getting Started <a name = "getting_started"></a>
+## 🏁 Iniciando <a name = "getting_started"></a>
 
-### Clone this repository
-`git clone https://github.com/electron/electron-quick-start`
+### Clone o repositorio
+`git clone https://github.com/AmauriOliveira/javaScript-electron-sqlite.git`
 
-### Go into the repository
-`cd electron-quick-start`
+### Entre no repositorio
+`cd javaScript-electron-sqlite`
 
 ### Install dependencies
 `npm install`
 
-### Run the app
+### Migrate
+`npx knex init`
+`npx knex migrate:make users`
+`npx knex migrate:latest`
+
+### Execultar o app
 `npm start`
+  caso de algum erro nos pacotes SQLite3 use o comando:
+`nmp postinstall`
 
 
-### Prerequisites
+## ⛏️ Feito com <a name = "built_using"></a>
 
-What things you need to install the software and how to install them.
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
-
-## 🔧 Running the tests <a name = "tests"></a>
-
-Explain how to run the automated tests for this system.
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## 🎈 Usage <a name="usage"></a>
-
-Add notes about how to use the system.
-
-## 🚀 Deployment <a name = "deployment"></a>
-
-Add additional notes about how to deploy this on a live system.
-
-## ⛏️ Built Using <a name = "built_using"></a>
-
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
+- [SQLITE](https://www.sqlite.org/index.html) - Database
+- [ElectronJs](https://www.electronjs.org/)
+- [KnexJs](http://knexjs.org/)
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 
 ## ✍️ Authors <a name = "authors"></a>
 
 - [Amauri Oliveira](https://github.com/amaurioliveira) - Idea & Initial work
-
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
-
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- References

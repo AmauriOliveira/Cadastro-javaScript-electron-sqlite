@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <title>Loading ...</title>
+    </head>
+
+    <body>
+        <a href="./list.html">GO</a>
+        <main class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-md-6 p-4 my-auto">
+
+                    <!-- Form -->
+                    <form id="userForm" class="card card-body">
+                        <div class="form-group">
+                            <input type="text" id="id" placeholder="Id" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Name" class="form-control" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="email" placeholder="Email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="whatsapp" placeholder="Whatsapp" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="city" placeholder="Cidade" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="uf" placeholder="UF" class="form-control">
+                        </div>
+                        <button type="submit" id="submit" class="btn btn-primary">
+                            Salvar
+                        </button>
+                    </form>
+
+                </div>
+
+                <!--List -->
+                <div class="col-md-6">
+
+                    <div>
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>E-mail</th>
+                                    <th>WhatsApp</th>
+                                    <th>Cidade</th>
+                                    <th>UF</th>
+                                    <th>DELETAR</th>
+                                    <th>EDITAR</th>
+                                </tr>
+                            </thead>
+                            <tbody id="users">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <script type="text/javascript" src="./controllers/userController.js"></script>
+    </body>
+
+</html>

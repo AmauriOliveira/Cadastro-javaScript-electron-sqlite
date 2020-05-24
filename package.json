@@ -1,11 +1,13 @@
 {
   "name": "Prototipo",
+  "title":"Cadastro",
   "version": "1.0.0",
   "description": "Meu primeiro projeto com ElectronJS",
   "main": "index.js",
   "scripts": {
     "start": "electron .",
     "rebuild": "electron-rebuild -f -w sqlite3",
+    "postinstall": "electron-builder install-app-deps",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -21,6 +23,7 @@
     "sqlite3": "^4.2.0"
   },
   "devDependencies": {
+    "electron-builder": "^22.6.1",
     "electron-rebuild": "^1.11.0"
   }
 }

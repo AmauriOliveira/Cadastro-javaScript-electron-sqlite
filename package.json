@@ -19,7 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "electron": "^9.0.0",
-    "knex": "^0.21.1",
+    "knex": "^2.4.0",
     "sqlite3": "^4.2.0"
   },
   "devDependencies": {
